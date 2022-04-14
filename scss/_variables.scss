@@ -1,0 +1,27 @@
+// primary colors
+$desaturated-red: hsl(0, 36%, 70%);
+$desaturated-red-a: hsla(0, 36%, 70%, 0.5);
+$soft-red: hsl(0, 93%, 68%);
+$soft-red-a: hsl(0, 93%, 68%, 0.5);
+$pink: hsl(0, 80%, 86%);
+
+// neutral colors
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+// gradients
+$gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+// typography
+$ff-sans: 'Josefin Sans', sans-serif;
+
+$fs-small: 1.35rem;
+$fs-normal: 1.6rem;
+$fs-heading: 3.9rem;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-semiBold: 600;
+
+// @media
+$desktop: 45em;
