@@ -16,8 +16,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -32,15 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+| Desktop layout |
+|:--:|
+![Desktop layout](./screenshots/screenshot-desktop.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+| Mobile layout |
+|:--:|
+![Mobile layout](./screenshots/screenshot-mobile-top.jpg) ![Mobile layout](./screenshots/screenshot-mobile-bottom.jpg)
 
 ### Links
 
@@ -52,63 +48,55 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- Sass
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+#### Sass
 
-To see how you can add code snippets, see below:
+This is my first challenge with Sass. The first set-up was a little confusing mainly because of @import being deprecated and soon dropped, I wanted to get it right from the start. I think I figured it out, with the help of:
+- freeCodeCamp's [Sass Tutorial for Beginners - CSS With Superpowers](https://youtu.be/_a5j7KoflTs)
+- Kevin Powell's video [Stop using @import with Sass | @use and @forward explained](https://youtu.be/_a5j7KoflTs)
 
+#### E-mail address validation
+
+I used a RegEx from w3resource: [JavaScript: HTML Form - email validation](https://www.w3resource.com/javascript/form/email-validation.php).
+
+I needed to look up JavaScript - DOM manipulation of placeholder input. This WDS video tutorial helped me: [JavaScript Form Validation](https://youtu.be/In0nB0ABaUk).
+
+I also needed to remove default browser e-mail validation error messages. It is easy: 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<form id="form" action="#" novalidate>
 ```
+I found it on Stack Overflow: [How to prevent the default browser input validation?](https://stackoverflow.com/questions/17997212/how-to-prevent-the-default-browser-input-validation)
+
+#### Submit button filter
+I wanted the button to stand out on hover and while error message is displayed as per design, solved it with a filter on top of box shadow. I used the first color from second gradient.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.submit:hover, .submit[data-error=true] {
+  ...
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 10px 10px hsl(0deg, 80%, 86%));
+  background-image: url(../../images/icon-arrow.svg);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+More on filters here: [Filter property on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter#specifications)
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I need to practice more JavaScript. And get much faster.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+The links are added in the text of [What I learned](#what-i-learned), respectively to the topic.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [PavlinaPs](https://github.com/PavlinaPs)
+- Frontend Mentor - [@PavlinaPs](https://www.frontendmentor.io/profile/PavlinaPs)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+It is great that I can solve Frontend Mentor challenges. They are all very useful for me. Also the video tutorials of freeCodeCamp, Kevin Powell and WDS are very useful. Thank you!

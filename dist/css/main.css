@@ -146,7 +146,8 @@ input:focus, input:active {
   border-radius: 2.25rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-.submit[data-error=true] {
+.submit:hover, .submit[data-error=true] {
+  top: -0.1rem;
   background-image: none;
   border: 2px solid hsl(0deg, 80%, 86%);
   background-color: hsl(0deg, 80%, 86%);
