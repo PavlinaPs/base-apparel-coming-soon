@@ -5,7 +5,6 @@ const form = document.getElementById('form');
 const errorMessage = document.querySelector('.error-message');
 const errorSubmit = document.getElementById('submit');
 
-
 form.addEventListener('submit', (e) => {
     if (validationRegex.test(enteredEmail.value)) {
         enteredEmail.classList.remove('email-error');
