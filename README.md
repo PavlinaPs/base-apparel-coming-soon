@@ -36,12 +36,12 @@ Users should be able to:
 
 | Mobile layout |
 |:--:|
-![Mobile layout](./screenshots/screenshot-mobile-top.jpg) ![Mobile layout](./screenshots/screenshot-mobile-bottom.jpg)
+![Mobile layout](./screenshots/screenshot-mobile.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/PavlinaPs/base-apparel-coming-soon
+- Live Site URL: https://pavlinaps.github.io/base-apparel-coming-soon/
 
 ## My process
 
@@ -56,9 +56,11 @@ Users should be able to:
 
 #### Sass
 
-This is my first challenge with Sass. The first set-up was a little confusing mainly because of @import being deprecated and soon dropped, I wanted to get it right from the start. I think I figured it out, with the help of:
+This is my first challenge using Sass. The first set-up was a little confusing mainly because of @import being deprecated and soon dropped, I wanted to get it right from the start. I think I figured it out, with the help of:
 - freeCodeCamp's [Sass Tutorial for Beginners - CSS With Superpowers](https://youtu.be/_a5j7KoflTs)
 - Kevin Powell's video [Stop using @import with Sass | @use and @forward explained](https://youtu.be/_a5j7KoflTs)
+
+But I don't know if I am deploying it right.
 
 #### E-mail address validation
 
